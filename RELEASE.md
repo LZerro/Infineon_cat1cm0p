@@ -13,7 +13,7 @@ Prebuilt application images are executed on the Cortex M0+ core of the CAT1 dual
 * [COMPONENT_CM0P_CRYPTO](./COMPONENT_CAT1A/COMPONENT_CM0P_CRYPTO/README.md)
 
     This image starts crypto server on CM0+ core,
-    starts CM4 core at CY_CORTEX_M4_APPL_ADDR=0x10008000
+    starts CM4 core at CY_CORTEX_M4_APPL_ADDR=0x1000A000
     and puts CM0+ core into a deep sleep mode.
 
 * [COMPONENT_CM0P_BLESS](./COMPONENT_CAT1A/COMPONENT_CM0P_BLESS/README.md)
@@ -41,6 +41,8 @@ Prebuilt application images are executed on the Cortex M0+ core of the CAT1 dual
 
 ### What Changed?
 
+#### v1.3.0
+* Production support added for Traveo II Body Entry devices.
 #### v1.2.0
 * BLESS FW update to v5.0.12.462
 #### v1.1.0

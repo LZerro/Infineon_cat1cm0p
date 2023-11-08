@@ -7,9 +7,9 @@ The images are provided as C arrays ready to be compiled as part of the Cortex M
 The Cortex M0+ application code is placed to internal flash by the Cortex M4/M7 linker script.
 
 Note: Each application image has a variant based on the hardware die (e.g.
-psoc6_01, psoc6_02, psoc6_03, xmc7100, xmc7200, ...) it is supported on. An #ifdef at the top of
-each .c file automatically controls which version is used so there is no need
-to specify a particular image.
+psoc6_01, psoc6_02, psoc6_03, xmc7100, xmc7200, tviibe1m, tviibe4m) it is supported on. 
+An #ifdef at the top of each .c file automatically controls which version is used so there 
+is no need to specify a particular image.
 
 ### CAT1A Images
 
@@ -21,7 +21,7 @@ to specify a particular image.
 * [COMPONENT_CM0P_CRYPTO](./COMPONENT_CAT1A/COMPONENT_CM0P_CRYPTO/README.md)
 
     This image starts crypto server on CM0+ core,
-    starts CM4 core at CY_CORTEX_M4_APPL_ADDR=0x10008000
+    starts CM4 core at CY_CORTEX_M4_APPL_ADDR=0x1000A000
     and puts CM0+ core into a deep sleep mode.
 
 * [COMPONENT_CM0P_BLESS](./COMPONENT_CAT1A/COMPONENT_CM0P_BLESS/README.md)
