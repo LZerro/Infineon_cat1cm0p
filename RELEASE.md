@@ -7,8 +7,10 @@ Prebuilt application images are executed on the Cortex M0+ core of the CAT1 dual
 
 * [COMPONENT_CM0P_SLEEP](./COMPONENT_CAT1A/COMPONENT_CM0P_SLEEP/README.md)
 
-    This image starts CM4 core at CY_CORTEX_M4_APPL_ADDR=0x10002000
-    and puts CM0+ core into a deep sleep mode.
+    This image starts CM4 core at CY_CORTEX_M4_APPL_ADDR
+    and puts CM0+ core into a deep sleep mode.  (Check your device's
+    linker file (psoc6) or partition file (Traveo) for the
+    location of CY_CORTEX_M4_APPL_ADDR.)
 
 * [COMPONENT_CM0P_CRYPTO](./COMPONENT_CAT1A/COMPONENT_CM0P_CRYPTO/README.md)
 
@@ -41,6 +43,10 @@ Prebuilt application images are executed on the Cortex M0+ core of the CAT1 dual
 
 ### What Changed?
 
+#### v1.5.0
+* Adds new support for Traveo II Body Entry 512K and 2M devices, and updates CM0P allocations for TVIIBE1M device.
+#### v1.4.0
+* Built prebuilts with mtb-pdl-cat1 3.9.0
 #### v1.3.0
 * Production support added for Traveo II Body Entry devices.
 #### v1.2.0
