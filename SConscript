@@ -35,5 +35,8 @@ if GetDepend(['SOC_XMC7200D_E272K8384AA']):
     src += Glob('COMPONENT_CAT1C/COMPONENT_XMC7x_CM0P_SLEEP/*.c')
     path += [cwd + '/COMPONENT_CAT1C']
 
+if GetDepend(['SOC_XMC7100D_F144K4160AA']):
+    src += Glob('COMPONENT_CAT1C/COMPONENT_XMC7x_CM0P_SLEEP/*.c')
+    path += [cwd + '/COMPONENT_CAT1C']
 group = DefineGroup('Libraries', src, depend=[''], CPPPATH=path)
 Return('group')
